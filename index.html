@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+<!-- Meta - caracteres necesarios (meta tags). -->
+<meta charset="utf-8">
+<!-- Meta - caracteres para que la página se muestre correctamente en dispositivos inteligentes. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Fuente de letra personalizada. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+<!-- Bootstrap, 'en línea'. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Archivos, Javascript necesarios. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Título de la página. -->
+<title>¡Generador de certificados (CREA)!</title>
+
+</head>
+
+<body style="font-family: 'Amiko', sans-serif;" class="bg-light" >
+
+<div class="container mt-3 text-justify"> <div class="row">
+
+<div class="col-12 p-2 border rounded shadow-sm bg-white"> <center>
+Ingresa aquí tu documento de identidad en <strong>CREA</strong>:
+<input type="text" id="documento" name="documento" 
+class="text-center text-primary font-weight-bold" required placeholder="Ej. 47259101"> 
+<input type="submit" id="vDocumento" name="vDocumento" 
+class="btn btn-outline-primary" value="¡Validar documento!"> 
+</center> </div>
+
+<div class="col-12 p-2 border rounded shadow-sm bg-white">
+<div id="resultados">La información relativa, aparecerá aquí…</div> </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="funcionalidades.js" ></script>
+
+</body> </html>
