@@ -30,6 +30,7 @@ function validarDocumento () {
    '<li class ="list-group-item shadow-sm"> <b>Nombre del participante: </b>' + datos.feed.entry[i]["gsx$nombredelparticipante."].$t + '</li>' +
    '<li class ="list-group-item shadow-sm"> <b>Documento de identidad: </b>' + datos.feed.entry[i]["gsx$documentodeidentidad."].$t + '</li>' +
    '<li class ="list-group-item shadow-sm"> <b>Certificación que has obtenido: </b>' + datos.feed.entry[i]["gsx$nombredelcursoquehaaprobado."].$t + '</li>' +
+   '<li class ="list-group-item shadow-sm"> <b>Horas de esfuerzo totales: </b>' + datos.feed.entry[i]["gsx$horasdeesfuerzototales."].$t + '</li>' +
    '<li class ="list-group-item shadow-sm"> <b>Mes en que es expedido: </b>' + datos.feed.entry[i]["gsx$mesenelquesehaaprobado."].$t + '</li>' +
    '<li class ="list-group-item shadow-sm"> <b>Descárgalo desde la siguiente URL: </b>' +
    '<a href=' + datos.feed.entry[i]["gsx$mergeddocurl-generadorprimero"].$t + ' target="_blank"><strong>¡CLIC AQUÍ PARA DESCARGAR!</strong></a>' + '</li>');
