@@ -25,7 +25,9 @@ function validarDocumento () {
  else if (this.status == 200 && this.readyState == 4) {
   datos = JSON.parse (this.responseText); // Transformación a formato JSON.
 // var i = 0, validadorDeConsulta = 0;
-  var i = datos.feed.entry.length - 1; validadorDeConsulta = 0;
+  validadorDeConsulta = 0;
+  if (datos.feed.openSearch$totalResults.$t != '0') {
+  var i = datos.feed.entry.length - 1;
   while (i >= 0) {
 //  while (i < datos.feed.entry.length) {
   if (datos.feed.entry[i]["gsx$documentodeidentidad."].$t == $("#documento").val()) {
@@ -41,7 +43,7 @@ function validarDocumento () {
    // i = datos.feed.entry.length; }
    i = 0; }
   // i++; } }
-  i--; } }
+  i--; } } }
   if (validadorDeConsulta == 0) { sinResultados (); } }
 $("#documento").focus(); }
 
