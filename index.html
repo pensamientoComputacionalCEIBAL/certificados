@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 
 <head>
-<!-- Meta - caracteres necesarios (meta tags). -->
 <meta charset="utf-8">
-<!-- Meta - caracteres para que la página se muestre correctamente en dispositivos inteligentes. -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Fuente de letra personalizada. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
-<!-- Favicon de la página web.
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
-<!-- Bootstrap, 'en línea'. -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- Archivos, Javascript necesarios. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-<!-- Título de la página. -->
-<title>¡Certificados de asistencia 'Talleres PC 2021'!</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<body style="font-family: 'Amiko', sans-serif;" class="bg-light" >
+<title>Certificados – Pensamiento Computacional CEIBAL</title> </head>
+
+<body style="font-family: 'Amiko', sans-serif; font-size: 16px;" class="bg-light" >
 
 <div class="container mt-3 text-justify"> <div class="row">
 
 <div class="col-12 p-2 border rounded shadow-sm bg-white"> <center>
 
 <div class="m-2" name="textoEjemplo">
-Ingresa aquí tu <strong>documento de identidad</strong>: </div>
+Ingresa aquí, tu <strong>documento de identidad</strong>: </div>
 
 <div class="m-2" name="cuadroDeTexto">
-<input type="text" id="documento" name="documento" class="text-center text-primary font-weight-bold" required placeholder="Ej. 47259101"> </div>
+<input type="text" id="documento" name="documento" class="text-center text-primary font-weight-bold" required placeholder="Ej. 12345678"> </div>
 
 <div class="m-2" name="botonComando">
 <input type="submit" id="vDocumento" name="vDocumento" 
-class="btn btn-outline-primary" value="¡Validar documento!"> </div>
+class="btn btn-outline-primary" value="¡Buscar certificados por el documento ingresado!"> </div>
 </center> </div>
 
 <div class="col-12 p-2 border rounded shadow-sm bg-white">
-<div id="resultados">La información relativa, aparecerá aquí…</div> </div>
+<div id="resultados">Los resultados, aparecerán aquí…</div> </div>
 
-</div>
+</div> </div>
 <script type="text/javascript" src="funcionalidades.js" ></script>
 
 </body> </html>
